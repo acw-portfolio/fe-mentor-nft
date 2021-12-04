@@ -41,8 +41,8 @@ Users should be able to:
 
 ### What I learned
 
-I used this project as basic trail run a hot-module reloading solution in Wick. It helped me flush out some bugs
-in the code and get the basic developers experience working. 
+I used this project as basic trail run of the hot-module reloading solution implemented in Wick. It helped me flush out some bugs
+in the code and improve basic developers experience. 
 
 The NFT card is built as a self contained component that has properties that can be individually set:
 
