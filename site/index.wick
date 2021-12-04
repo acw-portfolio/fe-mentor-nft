@@ -8,7 +8,7 @@ export default <div id="app">
     </head>
     
     <card 
-        src="images/image-equilibrium.jpg"
+        src="./images/image-equilibrium.jpg"
         title="Equilibrium #3429"
         description="Our Equilibrium collection promotes balance and calm."
         denomination="ETH"

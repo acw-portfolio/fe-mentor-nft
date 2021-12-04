@@ -26,7 +26,7 @@ export default <div>
         <span class="icon clock"></span>{time} left</span>
     </div>
     <div class=creator>
-     <img class=creator-img alt={creator} src="/images/image-avatar.png"/> <div>Creation of <a href="#">{creator}</a></div>
+     <img class=creator-img alt={creator} src="./images/image-avatar.png"/> <div>Creation of <a href="#">{creator}</a></div>
     </div>
 </div>;
 
@@ -54,7 +54,7 @@ export default <div>
 
     .item-preview-hover{
         position:absolute;
-        background: url("/images/icon-view.svg") no-repeat center center;
+        background: url("./images/icon-view.svg") no-repeat center center;
         background-color: #00FFF890;
         width:100%;
         height:100%;
@@ -138,11 +138,11 @@ export default <div>
 
     .ether {
         width:15px;
-        background: url("/images/icon-ethereum.svg") no-repeat;
+        background: url("./images/icon-ethereum.svg") no-repeat;
     }
 
     .clock {
         width:20px;
-        background: url("/images/icon-clock.svg") no-repeat;
+        background: url("./images/icon-clock.svg") no-repeat;
     }
 </style>
