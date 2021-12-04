@@ -1,9 +1,10 @@
+import "@radiate";
 import card from "./components/card";
 
-export default <div>
+export default <div id="app">
     
     <head>
-        <title>Test</title>
+        <title>NFT Card | Frontend Mentor</title>
     </head>
     
     <card 
