@@ -2,6 +2,7 @@ import {src, title, description, denomination, value, time, creator} from "@prop
 import glow from "@candlelib/glow";
 
 function on_mount(tr){
+    
     glow({
         obj:"@root",
         opacity:[{tic:400, val:0.3}, {tic:800, val:1}],
@@ -42,6 +43,11 @@ export default <div>
         padding:24px;
         box-shadow: 0 25px 10px rgba(0,0,0,0.01);
     }
+
+    .radiate-init root {
+        opacity:0
+    }    
+    
 
     .item-preview {
         position:relative;

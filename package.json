@@ -6,8 +6,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "preview": "npx candle.wick run --watch ./site/index.html",
-    "build": "npx candle.wick build --out www ./site/"
+    "preview": "npx candle.wick run ./site/index.html",
+    "build": "npx candle.wick compile --output ./docs/ ./site/"
   },
   "dependencies": {
     "@candlelib/wick": "^0.16.3"

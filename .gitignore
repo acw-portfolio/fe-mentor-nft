@@ -17,3 +17,6 @@
 
 # NPM packages
 node_modules/
+
+# Wick Temporary Folder
+.wick-temp
