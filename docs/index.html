@@ -1,296 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="generator" content="@candlelib/wick-0.16.1"> 
+
+<head>
+    <meta name="generator" content="@candlelib/wick-0.16.1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NFT Card | Frontend Mentor</title>
 
     <style id="wick-boiler-plate">
         body {
-            position:absolute; top:0;
-            left:0; width:100%;
-            height:100%; padding:0;
-            margin:0; border:none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            border: none;
         }
-        li { list-style:none }
-        a { text-decoration:none }
+
+        li {
+            list-style: none
+        }
+
+        a {
+            text-decoration: none
+        }
     </style>
     <style id="wick-app-style">
-    
-                @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:ital,wght@0,600;1,500&display=swap") ;
-                
-                body{
-                    font-family:Outfit , Arial , sans-serif;
-                    background-color:#0d192c
-                }
-                
-                .WkRkkOBiW1PkAkji{
-                    overflow:hidden;
-                    perspective:500px;
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    width:100vw;
-                    height:100vh;
-                    color:#ffffff
-                }
-                .WcLFdfcketPLwkGO{
-                    color:#8bacd9;
-                    font-size:12px;
-                    width:350px;
-                    height:fit-content;
-                    background-color:#15263f;
-                    border-radius:15px;
-                    box-sizing:border-box;
-                    padding:24px;
-                    box-shadow:0 25px 10px rgba(0,0,0,0.01)
-                }
-                
-                .WcLFdfcketPLwkGO .item-preview{
-                    position:relative;
-                    display:block;
-                    width:302px;
-                    height:302px;
-                    overflow:hidden;
-                    border-radius:8px
-                }
-                
-                .WcLFdfcketPLwkGO .item-preview-hover{
-                    position:absolute;
-                    background:url("./images/icon-view.svg") no-repeat center center;
-                    background-color:rgba(0,255,248,0.5625);
-                    width:100%;
-                    height:100%;
-                    opacity:0;
-                    transition:opacity 50ms
-                }
-                
-                .WcLFdfcketPLwkGO .item-preview img{
-                    border-radius:8px;
-                    position:absolute;
-                    top:0;
-                    width:100%;
-                    height:100%;
-                    transition:opacity 300ms
-                }
-                
-                .WcLFdfcketPLwkGO .item-preview:hover .item-preview-hover{
-                    opacity:1
-                }
-                
-                .WcLFdfcketPLwkGO a{
-                    color:#ffffff;
-                    transition:color 300ms
-                }
-                
-                .WcLFdfcketPLwkGO a:hover{
-                    color:#00fff8
-                }
-                
-                .WcLFdfcketPLwkGO h3{
-                    color:#ffffff;
-                    font-size:1.84em
-                }
-                
-                .WcLFdfcketPLwkGO .details{
-                    display:flex;
-                    justify-content:space-between
-                }
-                
-                .WcLFdfcketPLwkGO .description{
-                    font-weight:300;
-                    color:#8bacd9;
-                    font-size:1.5em
-                }
-                
-                .WcLFdfcketPLwkGO .cost{
-                    font-size:1.3em;
-                    font-weight:bold;
-                    float:left;
-                    color:#00fff8
-                }
-                
-                .WcLFdfcketPLwkGO .duration{
-                    font-weight:lighter;
-                    font-size:1.3em;
-                    float:right
-                }
-                
-                .WcLFdfcketPLwkGO .creator{
-                    display:flex;
-                    align-items:center;
-                    font-size:1.3em;
-                    font-weight:lighter;
-                    margin-top:24px;
-                    padding-top:24px;
-                    border-top:1px solid #2e405a
-                }
-                
-                .WcLFdfcketPLwkGO img.creator-img{
-                    width:30px;
-                    height:30px;
-                    border:1px solid #ffffff;
-                    border-radius:15px;
-                    margin-right:15px
-                }
-                
-                .WcLFdfcketPLwkGO .icon{
-                    display:inline-block;
-                    position:relative;
-                    height:20px;
-                    top:5px;
-                    margin-right:0px
-                }
-                
-                .WcLFdfcketPLwkGO .ether{
-                    width:15px;
-                    background:url("./images/icon-ethereum.svg") no-repeat
-                }
-                
-                .WcLFdfcketPLwkGO .clock{
-                    width:20px;
-                    background:url("./images/icon-clock.svg") no-repeat
-                }
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:ital,wght@0,600;1,500&display=swap");
+
+        body {
+            font-family: Outfit, Arial, sans-serif;
+            background-color: #0d192c
+        }
+
+        .WkRkkOBiW1PkAkji {
+            overflow: hidden;
+            perspective: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            color: #ffffff
+        }
+
+        .WcLFdfcketPLwkGO {
+            color: #8bacd9;
+            font-size: 12px;
+            width: 350px;
+            height: fit-content;
+            background-color: #15263f;
+            border-radius: 15px;
+            box-sizing: border-box;
+            padding: 24px;
+            box-shadow: 0 25px 10px rgba(0, 0, 0, 0.01)
+        }
+
+        .WcLFdfcketPLwkGO .item-preview {
+            position: relative;
+            display: block;
+            width: 302px;
+            height: 302px;
+            overflow: hidden;
+            border-radius: 8px
+        }
+
+        .WcLFdfcketPLwkGO .item-preview-hover {
+            position: absolute;
+            background: url("./images/icon-view.svg") no-repeat center center;
+            background-color: rgba(0, 255, 248, 0.5625);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 50ms
+        }
+
+        .WcLFdfcketPLwkGO .item-preview img {
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 300ms
+        }
+
+        .WcLFdfcketPLwkGO .item-preview:hover .item-preview-hover {
+            opacity: 1
+        }
+
+        .WcLFdfcketPLwkGO a {
+            color: #ffffff;
+            transition: color 300ms
+        }
+
+        .WcLFdfcketPLwkGO a:hover {
+            color: #00fff8
+        }
+
+        .WcLFdfcketPLwkGO h3 {
+            color: #ffffff;
+            font-size: 1.84em
+        }
+
+        .WcLFdfcketPLwkGO .details {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .WcLFdfcketPLwkGO .description {
+            font-weight: 300;
+            color: #8bacd9;
+            font-size: 1.5em
+        }
+
+        .WcLFdfcketPLwkGO .cost {
+            font-size: 1.3em;
+            font-weight: bold;
+            float: left;
+            color: #00fff8
+        }
+
+        .WcLFdfcketPLwkGO .duration {
+            font-weight: lighter;
+            font-size: 1.3em;
+            float: right
+        }
+
+        .WcLFdfcketPLwkGO .creator {
+            display: flex;
+            align-items: center;
+            font-size: 1.3em;
+            font-weight: lighter;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #2e405a
+        }
+
+        .WcLFdfcketPLwkGO img.creator-img {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ffffff;
+            border-radius: 15px;
+            margin-right: 15px
+        }
+
+        .WcLFdfcketPLwkGO .icon {
+            display: inline-block;
+            position: relative;
+            height: 20px;
+            top: 5px;
+            margin-right: 0px
+        }
+
+        .WcLFdfcketPLwkGO .ether {
+            width: 15px;
+            background: url("./images/icon-ethereum.svg") no-repeat
+        }
+
+        .WcLFdfcketPLwkGO .clock {
+            width: 20px;
+            background: url("./images/icon-clock.svg") no-repeat
+        }
     </style>
 
     <style id="radiate">
         radiate-modals {
-            position:fixed;
-            top:0;
-            left:0;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
 
-        radiate-modal {
+        radiate-modal {}
 
-        }
-
-        radiate-modals iframe{
+        radiate-modals iframe {
             border: none;
-            width:100vh;
-            height:100vh;
+            width: 100vh;
+            height: 100vh;
         }
     </style>
-  </head>
-  <body>
-    <script> document.body.hidden = true; </script>
+</head>
+
+<body>
 
     <div w:u="0" id="app" w:c class="WkRkkOBiW1PkAkji">
-      <div w:u="1" w:c class="WcLFdfcketPLwkGO" expat="WkCKoN7kM4Qv9ifs" src="./images/image-equilibrium.jpg" title="Equilibrium #3429" description="Our Equilibrium collection promotes balance and calm." denomination="ETH" value="0.041" time="3 days" creator="Jules Wyvern">
-        <a w:u="1" class="item-preview" href="#">
-          <img w:u="2" src="./images/image-equilibrium.jpg" alt="Equilibrium #3429"/>
-          <div w:u="3" class="item-preview-hover">
-          </div>
-        </a>
-        <h3 w:u="4">
-          <a w:u="5" href="#"><w-b w:u="6">Equilibrium #3429</w-b>
-          </a>
-        </h3>
-        <p w:u="7" class="description"><w-b w:u="8">Our Equilibrium collection promotes balance and calm.</w-b>
-        </p>
-        <div w:u="9" class="details">
-          <span w:u="10" class="cost">
-            <span w:u="11" class="icon ether">
-            </span><w-b w:u="12">0.041</w-b> <w-b w:u="13">ETH</w-b>
-          </span>
-          <span w:u="14" class="duration">
-            <span w:u="15" class="icon clock">
-            </span><w-b w:u="16">3 days</w-b> left
-          </span>
-        </div>
-        <div w:u="17" class="creator">
-          <img w:u="18" alt="Jules Wyvern" class="creator-img" src="./images/image-avatar.png"/>
-          <div w:u="19">Creation of 
-            <a w:u="20" href="#"><w-b w:u="21">Jules Wyvern</w-b>
+        <div w:u="1" w:c class="WcLFdfcketPLwkGO" expat="WkCKoN7kM4Qv9ifs" src="./images/image-equilibrium.jpg"
+            title="Equilibrium #3429" description="Our Equilibrium collection promotes balance and calm."
+            denomination="ETH" value="0.041" time="3 days" creator="Jules Wyvern">
+            <a w:u="1" class="item-preview" href="#">
+                <img w:u="2" src="./images/image-equilibrium.jpg" alt="Equilibrium #3429" />
+                <div w:u="3" class="item-preview-hover">
+                </div>
             </a>
-          </div>
+            <h3 w:u="4">
+                <a w:u="5" href="#">
+                    <w-b w:u="6">Equilibrium #3429</w-b>
+                </a>
+            </h3>
+            <p w:u="7" class="description">
+                <w-b w:u="8">Our Equilibrium collection promotes balance and calm.</w-b>
+            </p>
+            <div w:u="9" class="details">
+                <span w:u="10" class="cost">
+                    <span w:u="11" class="icon ether">
+                    </span>
+                    <w-b w:u="12">0.041</w-b>
+                    <w-b w:u="13">ETH</w-b>
+                </span>
+                <span w:u="14" class="duration">
+                    <span w:u="15" class="icon clock">
+                    </span>
+                    <w-b w:u="16">3 days</w-b> left
+                </span>
+            </div>
+            <div w:u="17" class="creator">
+                <img w:u="18" alt="Jules Wyvern" class="creator-img" src="./images/image-avatar.png" />
+                <div w:u="19">Creation of
+                    <a w:u="20" href="#">
+                        <w-b w:u="21">Jules Wyvern</w-b>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
-    <script type=module id="wick-init-script">
-      
-				import {radiate} from "./src/pack.js";
-				radiate.default();
-    </script>
-    <script type=module id="wick-component-script">
-      
-    const w = wick;
 
-    w.appendPresets({"repo":[["MccdVAicX","./src/pack.js"]]});
+</body>
 
-    
-      w.rt.rC(class WkRkkOBiW1PkAkji extends w.rt.C{
-      
-          });
-      w.rt.rC(class WcLFdfcketPLwkGO extends w.rt.C{
-      
-          async async_init(  ){
-      
-              this.context.api.MccdVAicX.default(
-      
-                  { 
-      
-                      obj:this.elu[0][0],
-      
-                      opacity:[{ tic:400, val:0.3 },{ tic:800, val:1 }],
-      
-                      transform:[{ tic:0, val:"translateY(300px) rotateX(-30deg)" },{ 
-      
-                          tic:800,
-      
-                          val:"translateY(0px) rotateX(0deg)",
-      
-                          eas:this.context.api.MccdVAicX.default.easing.ease_out
-                       }]
-                   }
-              ).play();
-          }
-      
-          init_interfaces( c ){
-      
-              c.lookup_function_table = [c.u0,c.u1,c.u2,c.u3,c.u4,c.u5,c.u6,c.u7];
-      
-              c.nlu = { 
-      
-                  src:2197815296,
-      
-                  title:2197815297,
-      
-                  description:2197815298,
-      
-                  value:2197815299,
-      
-                  denomination:2197815300,
-      
-                  time:2197815301,
-      
-                  creator:2197815302,
-      
-                  glow:2164260871
-               };
-          }
-      
-          u0( f, c ){this.sa(2, "src", this[0]);}
-      
-          u1( f, c ){this.sa(2, "alt", this[1]); this.ue(6, this[1]);}
-      
-          u2( f, c ){this.ue(8, this[2]);}
-      
-          u3( f, c ){this.ue(12, this[3]);}
-      
-          u4( f, c ){this.ue(13, this[4]);}
-      
-          u5( f, c ){this.ue(16, this[5]);}
-      
-          u6( f, c ){
-      
-              this.sa(18, "alt", this[6]);
-      
-              this.ue(21, this[6]);
-          }
-      });
-    
-    </script>
-  </body>
 </html>
