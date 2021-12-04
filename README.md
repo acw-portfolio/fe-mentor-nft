@@ -28,17 +28,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/acw-portfolio/fe-mentor-nft)
+- Live Site URL: [Github Page](https://acw-portfolio.github.io/fe-mentor-nft/)
 
 ## My process
 
 ### Built with
 
-- Candle Library Wick
 - CSS Flexbox
-- CSS Transform 3D
-- Mobile-first workflow
+- CSS 3D Transform 
 - [Wick](https://github.com/CandleLibrary/candle-library-workspace/tree/main/packages/wick) - Web Component Compiler
 
 ### What I learned
@@ -60,9 +58,8 @@ The NFT card is built as a self contained component that has properties that can
 />
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ## Author
 
-- Website - [Add your name here](https://github.com/acweathersby)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/acweathersby)
+- Website - [Anthony Weathersby](https://github.com/acweathersby)
+- Frontend Mentor - [@acweathersby](https://www.frontendmentor.io/profile/acweathersby)
