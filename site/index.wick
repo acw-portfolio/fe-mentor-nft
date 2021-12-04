@@ -1,0 +1,38 @@
+import card from "./components/card";
+
+export default <div>
+    
+    <head>
+        <title>Test</title>
+    </head>
+    
+    <card 
+        src="images/image-equilibrium.jpg"
+        title="Equilibrium #3429"
+        description="Our Equilibrium collection promotes balance and calm."
+        denomination="ETH"
+        value="0.041"
+        time="3 days"
+        creator="Jules Wyvern"
+    />
+</div>;
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:ital,wght@0,600;1,500&display=swap');
+
+    body{
+        font-family: Outfit, Arial, sans-serif;
+        background-color:#0D192C
+    }
+
+    root {
+        overflow:hidden;
+        perspective:500px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100vw;
+        height:100vh;
+        color:white;
+    }
+</style>;
